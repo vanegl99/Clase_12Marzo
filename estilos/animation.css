@@ -1,0 +1,112 @@
+.fadeIn {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    }
+    to {
+      opacity: 1;
+      }
+
+}
+
+.fadeInDown {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%,0);
+    -webkit-transform: translate3d(0, -100%,0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0%,0);
+      -webkit-transform: translate3d(0, -0%,0);
+      }
+
+}
+
+.fadeInUp {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%,0);
+    -webkit-transform: translate3d(0, 100%,0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0%,0);
+      -webkit-transform: translate3d(0, -0%,0);
+      }
+
+}
+
+.slideIn {
+  animation-duration: 3s;
+  animation-name: slideIn;
+  animation-direction: alternate;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-direction: alternate;
+}
+
+@keyframes slideIn {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+   margin-left:0%;
+   width:100%;
+ }
+}
+
+
+
+.bounce {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+   0% { transform: scale(1); }
+   50% { transform: scale(1.1); }
+   100% { transform: scale(1); }
+}
